@@ -7,8 +7,9 @@ Provide a short description explaining the what, why, and how of your project. U
 - What was your motivation?
 - To check the weather in a city for a weekly and daily forecast
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- How to geocode user location and to update the api based on location
+- To have a simple weather app to see forecasted weather for a city or user location
 - What problem does it solve?
+- Getting a forecast of the weather for a 5 day forecast
 - A simple weather app to see the forecasted weather for a city or user location.
 - What did you learn?
 - Api calls and how to use various apis to get results. How to convert Temperature from Kelvin to Fahrenheit using code.
