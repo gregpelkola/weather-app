@@ -55,7 +55,7 @@ const getWeatherDetails = (cityName, latitude, longitude) => {
     });
 }
 const getCityCoordinates = () => {
-    console.log(city)
+    
     const cityName = cityInput.value.trim();
     if (cityName === "") return;
     const API_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`;
