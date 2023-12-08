@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* body styling */
+body {
+    background: lightskyblue;
+    color: white;
+}
+/* header styling */
+h1 {
+    background: lightseagreen;
+    color: white;
+    text-align: center;
+    font-size: 1.75em;
+    padding: 30px;
+    border-bottom:  solid 4px;
+    border-color: white;
+}
+/* .container sizing and positioning */
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+/* text input box sizing */
+.weather-input {
+    width: 100%;
+}
+/* stle for when text inupt box is NOT selected */
+.weather-input input {
+    width: 100%;
+    height: 46px;
+    color: black;
+    outline: white;
+    padding: 0 15px;
+    margin: 10px 0 20px 0;
+    font-size: 1.07em;
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: black;
+}
+/* style for when text input box is selected */
+.weather-input input:focus {
+    padding: 0 16px;
+    border: 2px solid white;
+}
+/* style for .separator */
+.weather-input .separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* style for .separator */
+.weather-input .separator::before {
+    content: "or";
+    color: white;
+    font-size: 1.18rem;
+    padding: 0px 15px;
+    margin-top: -4px;
+    background: lightseagreen;
+    border: solid;
+}
+/* style for weather-input button */
+.weather-input button {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+    outline: white;
+    border: solid;
+    color: white;
+    font-size: 1em;
+    border-radius: 4px;
+    background: lightseagreen;
+}
+/* hover effect for search button */
+.weather-input .search-btn:hover {
+    background: darkgray;
+}
+/* hover effect for location button */
+.weather-input .location-btn:hover {
+    background: darkgray;
+}
+/* width for weather-data */
+.weather-data {
+    width: 100%;
+}
+/* styles for .weather-data .current-weather*/
+.weather-data .current-weather {
+    color: white;
+    background: lightseagreen;
+    border-radius: 5px;
+    border: solid;
+    padding: 20px 70px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+/* style for h2 .current-weather*/
+.current-weather h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+/* style for h4 .weather-data */
+.weather-data h4 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/*.icon positioning*/
+.current-weather .icon {
+    text-align: center;
+}
+/* .icon img positioning */
+.current-weather .icon img {
+    max-width: 120px;
+    margin-top: -15px;
+}
+/* style h4 for .current-weather .icon*/
+.current-weather .icon h4 {
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+/* style for h2 .forecast */
+.forecast h2 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+/* positioning of forecast weather-cards */
+.forecast .weather-cards {
+    display: flex;
+    gap: 20px;
+}
+/* card style for weather-cards */
+.weather-cards .card {
+    list-style: none;
+    color: white;
+    padding: 18px 16px;
+    border-radius: 5px;
+    border: solid;
+    background: lightseagreen;
+    width: calc(100% / 5);
+}
+/* style h3 for .weather-cards */
+.weather-cards h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+/* .weather-card img sizing */
+.weather-cards .card img {
+    max-width: 70px;
+    margin: 5px 0 -12px 0;
+}
+
+@media (max-width: 1200px) {
+    .weather-cards .card {
+        width: calc(100% / 3 - 15px);
+    }
+}
+
+@media (max-width: 950px) {
+    .weather-input {
+        width: 450px;
+    }
+    .weather-cards .card {
+        width: calc(100% / 2 -10px);
+    }
+}
+
+@media (max-width: 750px) {
+    h1{
+        font-size: 1.45rem;
+        padding: 16px 0;
+    }
+    .container {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .weather-input {
+        width: 100%;
+    }
+    .weather-data h4 {
+        font-size: 1.35rem;
+    }
+}
